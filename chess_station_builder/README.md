@@ -11,9 +11,8 @@ This directory contains the initial Flask backend for the Chess Station Builder 
 
 ```bash
 cd chess_station_builder
-uv venv --python 3.12
+./scripts/setup_env.sh
 source .venv/bin/activate
-uv pip install -e ".[dev]"
 ```
 
 ## Running the App
