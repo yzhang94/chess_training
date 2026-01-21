@@ -1,0 +1,23 @@
+[project]
+name = "chess-station-builder"
+version = "0.1.0"
+description = "Simple Flask backend for Chess Station Builder"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.0",
+    "flask-cors>=4.0",
+    "flask-sqlalchemy>=3.1",
+    "sqlalchemy>=2.0",
+    "pymysql>=1.1",
+    "python-chess>=1.999",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
